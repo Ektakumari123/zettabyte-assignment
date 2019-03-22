@@ -1,0 +1,11 @@
+<div>
+  <div class="header">
+    <h1>Albums</h1>
+    <button (click)="backClicked()" class="back-button">Back</button>
+  </div>
+  <ul>
+    <li *ngFor="let   album of albums">
+      <p><a [routerLink]="['../../photos', album.id]">{{album.title}}</a></p>
+    </li>
+  </ul>
+</div>

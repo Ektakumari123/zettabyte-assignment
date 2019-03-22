@@ -1,0 +1,10 @@
+<div>
+  <div class="header">
+    <h1>List of Users</h1>
+  </div>
+  <ul>
+    <li *ngFor="let user of users">
+      <p><a [routerLink]="['../albums', user.id]">{{user.name}}</a></p>
+    </li>
+  </ul>
+</div>
